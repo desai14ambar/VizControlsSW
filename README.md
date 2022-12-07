@@ -8,11 +8,16 @@ Language supported C/C++
 Required Python >= 3.7
 
 Python libraries:
-*openpyxl
-*functiondefextractor
-*tkinter
-*nltk.tokenize
-*nltk.corpus
+
+openpyxl
+
+functiondefextractor
+
+tkinter
+
+nltk.tokenize
+
+nltk.corpus
 
 ### Usage:
 
