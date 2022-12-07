@@ -9,14 +9,10 @@ Required Python >= 3.7
 
 Python libraries:
 
-openpyxl
-
-functiondefextractor
-
-tkinter
-
-nltk.tokenize
-
+openpyxl \
+functiondefextractor \
+tkinter \
+nltk.tokenize \
 nltk.corpus
 
 ### Usage:
