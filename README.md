@@ -31,3 +31,7 @@ Place the src project in the same folder created above. Note: the C/C++ files mu
 
 Run main.py \
 A GUI will open, follow the prompts in the GUI 
+
+
+
+![Image](VizControlsSW_usage.gif)
