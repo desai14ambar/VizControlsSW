@@ -12,7 +12,7 @@ import os
 
 from instruct1 import instructs
 
-srcPath = r'Arducopter'
+# srcPath = r'Arducopter'
 dataFile = 'VizControlsSWDatabase'
 genDataFile = TRUE
 
