@@ -1,7 +1,6 @@
-from pickle import FALSE
+
 from ExtractComments import getComments
 from openpyxl import load_workbook
-from functiondefextractor import core_extractor
 from ConvertExcel import convert2Excel, createDataFile
 from analyzeDataFile import analyzeData
 from finalVote import finalVotefcn
@@ -10,12 +9,11 @@ from vizDataEx import createViz
 from GUIfactory import *
 from  tkinter import filedialog
 import os
-from tkinter import ttk
 
 from instruct1 import instructs
 
 srcPath = r'Arducopter'
-dataFile = 'ExtractFunctions2'
+dataFile = 'VizControlsSWDatabase'
 genDataFile = TRUE
 
 swPath = ''
