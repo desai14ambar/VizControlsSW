@@ -55,8 +55,8 @@ def analyzeData(dataFile):
                     #                 wsData.cell(row,colData+4+ cell.column).value = wsData.cell(row,colData+4+ cell.column).value + 1
 
         hitsArrayVal = ' '.join([''.join(sub) for sub in hitsArray])
-        wsData.cell(row, colData+3).value = hitsArrayVal
-        wsData.cell(row, + colData+4).value = groupVal
+        # wsData.cell(row, colData+3).value = hitsArrayVal
+        # wsData.cell(row, + colData+4).value = groupVal
         # print(hitsArray)
         hitsArray=[] # re-init array for next function name search 
         groupVal = '' # re-init for next row
@@ -75,9 +75,10 @@ def analyzeData(dataFile):
                                 else:
                                     wsData.cell(row,colData+4+ cell.column).value = wsData.cell(row,colData+4+ cell.column).value + 1
 
-    wsData.cell(1, colData+3).value = 'Function+Classification'
-    wsData.cell(1, + colData+4).value = 'Classification'
-
+    wsData.cell(1, + colData).value = 'Function ID'
+    wsData.cell(1, + colData+1).value = 'Function Comments'
+    wsData.cell(1, + colData+2).value = 'Tokenized Comments'
+    
     # classification columns 
     wsData.cell(1, + colData+5).value = 'Sensor Fcns'
     wsData.cell(1, + colData+6).value = 'Control Fcns'
@@ -86,6 +87,8 @@ def analyzeData(dataFile):
     wsData.cell(1, + colData+9).value = 'Initialization'
     wsData.cell(1, + colData+10).value = 'Calibration'
     wsData.cell(1, + colData+11).value = 'Communication'
+
+    wsData.cell(1, + colData+13).value = 'Classification'
 
     wbData.save(filename = dataFile)
     wbData.close()

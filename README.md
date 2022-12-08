@@ -12,7 +12,7 @@ openpyxl \
 functiondefextractor \
 tkinter \
 nltk.tokenize \
-nltk.corpus
+nltk.corpus (download stopwordss)
 
 ### Usage:
 

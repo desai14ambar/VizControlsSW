@@ -70,7 +70,7 @@ vizDatabase = GUIFactory(ButtonFactory).create(master, "Visualize", 2, 1, "W", l
 vizDatabase.label_obj.place(x=250, y = 50)
 
 instructs2 = Label(master, text= instructs, justify=LEFT)
-instructs2.place(x=330, y=10)
+instructs2.place(x=320, y=5)
 
 mainloop()
 
